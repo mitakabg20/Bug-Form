@@ -56,20 +56,23 @@
     </style>
 </head>
 <body>
-    <form action="https://formspree.io/f/mrbekdgl" method="POST">
+    <form action="https://formspree.io/f/xqaebjej" method="POST" enctype="multipart/form-data">
         <h2>Bug Report Form</h2>
         
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
         <label for="platform">Platform:</label>
-        <select id="platform" name="platform">
+        <select id="platform" name="platform" required>
             <option value="pc">PC</option>
             <option value="mobile">Mobile</option>
         </select>
         
         <label for="game-version">Game Version And Name:</label>
-        <input type="text" id="game-version-and-name" name="game-version-and-name" placeholder="Enter game version and name">
+        <input type="text" id="game-version-and-name" name="game-version-and-name" placeholder="Enter game version and name" required>
         
         <label for="issue-type">Issue Type:</label>
-        <select id="issue-type" name="issue-type">
+        <select id="issue-type" name="issue-type" required>
             <option value="crash">Crash</option>
             <option value="gameplay">Gameplay Issue</option>
             <option value="audio">Audio Issue</option>
@@ -78,10 +81,10 @@
         </select>
         
         <label for="description">Bug Description:</label>
-        <textarea id="description" name="description" rows="4" placeholder="Describe the bug in detail"></textarea>
+        <textarea id="description" name="description" rows="4" placeholder="Describe the bug in detail" required></textarea>
         
         <label for="priority">Priority:</label>
-        <select id="priority" name="priority">
+        <select id="priority" name="priority" required>
             <option value="low">Low</option>
             <option value="medium">Medium</option>
             <option value="high">High</option>
