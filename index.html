@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Report Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?technology,abstract') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(95, 11, 11, 0.815);
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: rgb(255, 255, 255);
+        }
+        button {
+            margin-top: 15px;
+            background: #ff5733;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/mileva.cd@gmail.com" method="POST">
+        <h2>Bug Report Form</h2>
+        
+        <label for="platform">Platform:</label>
+        <select id="platform" name="platform">
+            <option value="pc">PC</option>
+            <option value="mobile">Mobile</option>
+        </select>
+        
+        <label for="game-version">Game Version And Name:</label>
+        <input type="text" id="game-version-and-name" name="game-version-and-name" placeholder="Enter game version and name">
+        
+        <label for="issue-type">Issue Type:</label>
+        <select id="issue-type" name="issue-type">
+            <option value="crash">Crash</option>
+            <option value="gameplay">Gameplay Issue</option>
+            <option value="audio">Audio Issue</option>
+            <option value="visual">Visual Glitch</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="description">Bug Description:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe the bug in detail"></textarea>
+        
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        
+        <label for="screenshot">Upload Screenshot/Video:</label>
+        <input type="file" id="screenshot" name="screenshot">
+        
+        <button type="submit">Submit Bug Report</button>
+    </form>
+</body>
+</html>
